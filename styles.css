@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container{
+    position: relative;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.515);
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    color: #fff;
+    z-index: 1;
+}
+
+.atm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg, #004d00, #00cc00, #b3ffb3);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 300px;
+}
+
+button:hover {
+    background-color:linear-gradient(135deg, #57cf1f, #157d15, #5c935c);
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+input[type="number"] {
+    width: 120px;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+#output {
+    background-color: #00fffb;
+    color: #333;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
